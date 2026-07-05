@@ -1,0 +1,6 @@
+{
+  "name": "Dev-Detective",
+  "description": "A client-side GitHub profile explorer and comparison tool with battle mode, repository analysis, and statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
