@@ -2,271 +2,138 @@
 
 # 🕵️ Dev Detective
 
-### A Modern GitHub Profile Explorer & Developer Battle Platform
+### Modern GitHub Profile Explorer & Developer Battle
 
-Discover GitHub profiles, analyze developer statistics, explore repositories, and compare developers through an elegant, responsive, and feature-rich web application.
+Explore GitHub profiles, analyze developer statistics, browse repositories, and compare developers through a clean and responsive interface.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![GitHub API](https://img.shields.io/badge/GitHub-REST_API-181717?style=for-the-badge&logo=github)
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
-
----
-
-**Built with ❤️ using React, TypeScript, Tailwind CSS, and the GitHub REST API**
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss)
 
 </div>
 
 ---
 
-# 📖 Overview
+## 📖 Overview
 
-Dev Detective is a modern web application that helps users explore GitHub profiles in a clean and intuitive interface.
-
-The application fetches real-time data from the GitHub REST API and presents detailed information about developers, including profile statistics, repositories, contribution insights, and social information. It also includes an exciting **Developer Battle Mode**, allowing users to compare two GitHub profiles based on their public statistics.
-
-The project focuses on performance, responsiveness, clean UI, reusable components, and an excellent user experience.
+Dev Detective is a modern GitHub profile explorer built with **React**, **TypeScript**, and **Vite**. It fetches live data from the GitHub REST API, allowing users to search developer profiles, view repository statistics, and compare two developers in an interactive battle mode.
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-## 🔍 GitHub Profile Search
-
-Search any public GitHub username and instantly access:
-
-- Profile picture
-- Name & username
-- Bio
-- Location
-- Company
-- Website
-- Twitter/X handle
-- Join date
-- Followers
-- Following
-- Public repositories
+- 🔍 Search GitHub users
+- 👤 View detailed profile information
+- 📦 Explore public repositories
+- ⭐ Calculate total repository stars
+- ⚔️ Compare developers in Battle Mode
+- 🌙 Dark & Light theme
+- 📱 Fully responsive design
+- ⚡ Skeleton loading animations
+- ❌ Friendly error handling
 
 ---
 
-## ⭐ Repository Explorer
-
-Browse developer repositories with:
-
-- Repository name
-- Description
-- Programming language
-- Stars
-- Fork count
-- Repository visibility
-- Latest repositories
-
----
-
-## ⚔️ Developer Battle
-
-Compare two GitHub developers based on:
-
-- Followers
-- Following
-- Repository count
-- Total stars
-- GitHub activity
-- Overall profile strength
-
-An interactive interface determines the stronger developer profile using GitHub statistics.
-
----
-
-## 🌙 Dark / Light Theme
-
-- Modern Dark Mode
-- Elegant Light Mode
-- Theme persistence using Local Storage
-- Smooth transitions
-
----
-
-## ⚡ Fast User Experience
-
-- Skeleton loading animations
-- Instant search feedback
-- Responsive layout
-- Smooth animations
-- Optimized rendering
-
----
-
-## ❌ Smart Error Handling
-
-Gracefully handles:
-
-- Invalid usernames
-- Empty search results
-- API failures
-- Rate limit errors
-- Network issues
-
----
-
-## 📱 Responsive Design
-
-Optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile devices
-
----
-
-## 🎨 Beautiful UI
-
-- Modern card layouts
-- Gradient accents
-- Clean typography
-- Rounded components
-- Elegant spacing
-- Interactive hover effects
-- Professional color palette
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
+## 🛠 Tech Stack
 
 - React 19
 - TypeScript
 - Vite
-- Tailwind CSS v4
-- Lucide React Icons
-- Motion Animation Library
-
----
-
-## Backend
-
-- Express.js
-
----
-
-## APIs
-
+- Tailwind CSS
 - GitHub REST API
+- Lucide React
+- Motion
 
 ---
 
-## Development Tools
-
-- Node.js
-- npm
-- TypeScript
-- Vite Build Tool
-
----
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
-dev-detective/
-│
-├── src/
-│   ├── components/
-│   │   ├── Header
-│   │   ├── SearchBox
-│   │   ├── ProfileCard
-│   │   ├── RepoList
-│   │   ├── BattleMode
-│   │   └── ...
-│   │
-│   ├── utils/
-│   ├── types/
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── public/
-├── package.json
-├── package-lock.json
-├── vite.config.ts
-├── tsconfig.json
-└── README.md
+src/
+├── components/
+├── utils/
+├── types/
+├── App.tsx
+└── main.tsx
 ```
 
 ---
 
-# 🎯 Core Modules
+## 🚀 Getting Started
 
-| Module | Description |
-|---------|-------------|
-| 🔍 Profile Detective | Search and analyze GitHub users |
-| ⭐ Repository Explorer | View repositories and statistics |
-| ⚔️ Developer Battle | Compare two GitHub profiles |
-| 🌙 Theme Manager | Dark and Light mode support |
-| ⚡ Loading System | Skeleton loaders and smooth UX |
-| ❌ Error Handler | Friendly error messages |
+Clone the repository
 
----
-
-# 🚀 Why This Project?
-
-Most GitHub profile viewers only display basic information.
-
-Dev Detective goes beyond that by providing:
-
-- Beautiful modern UI
-- Developer comparison
-- Repository insights
-- Total star calculation
-- Responsive experience
-- Professional animations
-- Better user experience than the default GitHub profile page
-
----
-
-# 📸 Screenshots
-
-> Add screenshots here after uploading images to your GitHub repository.
-
-### Home Page
-
-```
-docs/images/home.png
+```bash
+git clone https://github.com/your-username/dev-detective.git
+cd dev-detective
 ```
 
-### Profile Search
+Install dependencies
 
-```
-docs/images/profile.png
-```
-
-### Developer Battle
-
-```
-docs/images/battle.png
+```bash
+npm install
 ```
 
-### Dark Mode
+Create a `.env` file
 
+```env
+APP_URL=http://localhost:3000
 ```
-docs/images/dark-mode.png
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
 ```
 
 ---
 
-# ⭐ Highlights
+## 📸 Screenshots
+| Home | Battle Mode |
 
-- Modern UI
-- Responsive Design
-- GitHub REST API Integration
-- React 19
-- TypeScript
-- Component-Based Architecture
-- Dark Mode
-- Loading Skeletons
-- Developer Battle
-- Repository Explorer
-- Local Storage Support
-- Clean Code Structure
+<img width="862" height="646" alt="image" src="https://github.com/user-attachments/assets/47c112a6-9d81-4fc4-8dcf-70e61581f541" />
+| Home Screenshot | Battle Screenshot |
+<img width="875" height="640" alt="image" src="https://github.com/user-attachments/assets/9a35e558-3769-4681-878b-c45ce4fd1988" />
+
+---
+
+## 🚀 Future Enhancements
+
+- Repository analytics
+- Language statistics
+- Contribution graph
+- AI-powered developer insights
+- Export profile as PDF
+- GitHub OAuth
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Alok Kumar Mishra**
+
+If you like this project, consider giving it a ⭐ on GitHub.
